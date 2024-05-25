@@ -9,7 +9,7 @@
   
   let gridType;
   let moves = 0;
-  let time = 30;
+  let time = 35;
   let timerID = null
   let array = [];
   let matched = [];
@@ -44,7 +44,7 @@
     
     timerID = setInterval(() => {
       time -= 1
-      progress.set((time / 30) * 100);
+      progress.set((time / 35) * 100);
     }, 1000);
   }
   
@@ -59,7 +59,7 @@
   }
   
   function resetGame() {
-    time = 30;
+    time = 35;
     moves = 0;
     timerID && clearInterval(timerID);
     timerID = null;
